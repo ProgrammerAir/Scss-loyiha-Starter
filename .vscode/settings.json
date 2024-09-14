@@ -1,0 +1,10 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded", // bu yerda compressed desak css faylimiz minifier bo'ladi. Maslahat, oxirida qilib qo'y!
+            "extensionName": ".css",
+            "savePath": "/css"
+        }
+    ],
+    "liveServer.settings.port": 5502
+}
