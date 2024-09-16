@@ -1,0 +1,81 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.hero {
+
+    // border: 1px solid red;
+    &__firstSection {
+        @include mixins.flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 80px;
+        // border: 1px solid red;
+    }
+
+    &__userName {
+        @include mixins.flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            margin-bottom: 4px;
+            color: #62646C;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            color: #E4E4E6;
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__work {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__fSection {
+        display: flex;
+        align-items: center;
+        gap: 67px;
+    }
+
+    &__flet {
+        @include mixins.flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+            color: #fff;
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        button {    
+            border: none;
+            padding: 0;
+            border-radius: 100px;
+
+            a {
+                display: flex;
+                padding: 16px 40px;
+                border-radius: 100px;
+                background-color: #4A2CED;
+                box-shadow: inset 4px 4px 17.4px rgba(255, 255, 255, 0.28);
+            }
+        }
+    }
+
+    &__flet~span {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

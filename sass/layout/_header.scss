@@ -1,0 +1,83 @@
+@use "../abstract/variables";
+@use "../abstract/mixins";
+
+.header {
+    @include mixins.flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 62px;
+    border-bottom: 2px solid #1C1C21;
+
+    [header__logo] {
+        display: block;
+        width: max-content;
+
+        padding: 33.5px 18px {
+            right: 0;
+        }
+
+        ;
+        border-left: 1px solid #1C1C21;
+    }
+
+    nav {
+
+        ul {
+            height: 100%;
+            @include mixins.flex;
+            margin: 0;
+            padding: 0;
+
+            padding: {
+                top: 21px;
+            }
+
+            list-style: none;
+
+            li {
+                border-top: 1px solid #1C1C21;
+
+                a {
+                    display: block;
+                    padding: 25px 30px;
+                    color: #AFB0B6;
+                }
+            }
+
+            li:first-child {
+                border-left: 1px solid #1C1C21;
+                border-top-left-radius: 10px;
+
+                a {
+                    padding: 25px 40px;
+                    border-top-left-radius: 10px;
+                }
+            }
+
+            li:last-child {
+                border-right: 1px solid #1c1c21;
+                border-top-right-radius: 10px;
+
+                a {
+                    border-top-right-radius: 10px;
+                }
+            }
+
+            li {
+                a.active{
+                    background-color: #131316;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: max-content;
+        border-right: 1px solid #1C1C21;
+        padding: 22px 18px {
+            left: 0;
+        };
+    }
+}

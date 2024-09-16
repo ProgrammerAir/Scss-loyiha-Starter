@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #070708;
 }
 
 html {
@@ -34,9 +35,160 @@ a {
   overflow: hidden;
 }
 
+body {
+  font-family: "Manrope", sans-serif;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 62px;
+  border-bottom: 2px solid #1C1C21;
+}
+.header [header__logo] {
+  display: block;
+  width: max-content;
+  padding: 33.5px 18px;
+  padding-right: 0;
+  border-left: 1px solid #1C1C21;
+}
+.header nav ul {
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 21px;
+  list-style: none;
+}
+.header nav ul li {
+  border-top: 1px solid #1C1C21;
+}
+.header nav ul li a {
+  display: block;
+  padding: 25px 30px;
+  color: #AFB0B6;
+}
+.header nav ul li:first-child {
+  border-left: 1px solid #1C1C21;
+  border-top-left-radius: 10px;
+}
+.header nav ul li:first-child a {
+  padding: 25px 40px;
+  border-top-left-radius: 10px;
+}
+.header nav ul li:last-child {
+  border-right: 1px solid #1c1c21;
+  border-top-right-radius: 10px;
+}
+.header nav ul li:last-child a {
+  border-top-right-radius: 10px;
+}
+.header nav ul li a.active {
+  background-color: #131316;
+  color: #FFFFFF;
+}
+.header__btn {
+  display: block;
+  width: max-content;
+  border-right: 1px solid #1C1C21;
+  padding: 22px 18px;
+  padding-left: 0;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+}
+.btn a {
+  border: 2px solid #1C1C21;
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: #2F2F37;
+  background: linear-gradient(to bottom, #2F2F37 28%, #2F2F37 0%);
+  padding: 14px 20px;
+  font-family: "Manrope", sans-serif;
+}
+
+.hero__firstSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.hero__userName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__userName p {
+  margin-bottom: 4px;
+  color: #62646C;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.hero__userName h1 {
+  margin: 0;
+  padding: 0;
+  color: #E4E4E6;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.hero__work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__fSection {
+  display: flex;
+  align-items: center;
+  gap: 67px;
+}
+
+.hero__flet {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero__flet span {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__flet button {
+  border: none;
+  padding: 0;
+  border-radius: 100px;
+}
+
+.hero__flet button a {
+  display: flex;
+  padding: 16px 40px;
+  border-radius: 100px;
+  background-color: #4A2CED;
+  box-shadow: inset 4px 4px 17.4px rgba(255, 255, 255, 0.28);
+}
+
+.hero__flet ~ span {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
