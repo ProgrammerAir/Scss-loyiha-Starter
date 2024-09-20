@@ -1,0 +1,20 @@
+.icons {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #1C1C21;
+    padding: 8px;
+    border-radius: 100px;
+
+    div {
+        border: 1px solid red;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #1C1C21;
+        background-color: #2F2F37;
+        background: linear-gradient(to bottom, #2F2F37 28%, #2F2F37 0%);
+        border-radius: 100px;
+    }
+}

@@ -1,0 +1,140 @@
+.about {
+    padding: 150px 80px 0;
+
+    &__contant {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #1C1C21;
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            color: #797C86;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 48px;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+    }
+
+    div[userAbout] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+
+    div[aboutInfo] {
+        border: 1px solid #1C1C21;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+
+        div[aboutFirstInfo] {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            padding: 30px;
+            border-bottom: 1px solid #1C1C21;
+
+            p[firstp] {
+                display: flex;
+                width: max-content;
+                margin: 0;
+                margin-bottom: 16px;
+                gap: 6px;
+
+                span {
+                    color: #CACACE;
+                    font-size: 24px;
+                }
+            }
+
+            p[firstp]~p {
+                color: #AFB0B6;
+                width: 570px;
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+    }
+
+    div[aboutSecondInfo] {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 30px;
+
+        p[firstp] {
+            width: max-content;
+            display: flex;
+            margin: 0;
+            margin-bottom: 30px;
+            gap: 6px;
+
+            span {
+                color: #CACACE;
+                font-size: 24px;
+            }
+        }
+
+        div[form] {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+
+            [email] {
+                padding-right: 67px;
+                span {
+                    color: #E4E4E6;
+                }
+                p {
+                    margin: 0;
+                    margin-top: 6px;
+                    color: #AFB0B6;
+                    font-size: 18px;
+                }
+            }
+
+            [number] {
+                span {
+                    color: #E4E4E6;
+                }
+                p {
+                    margin: 0;
+                    margin-top: 6px;
+                    color: #AFB0B6;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    div[iconsBtn] {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    [btns] {
+        display: flex;
+        gap: 16px;
+        .btn {
+            a {
+                padding: 14px 53.5px;
+            }
+        }
+    }
+}

@@ -117,6 +117,48 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+.carusel {
+  padding: 16px 0;
+  border-top: 2px solid #1C1C21;
+  border-bottom: 1px solid #1C1C21;
+  overflow: hidden;
+}
+.carusel div {
+  display: flex;
+  gap: 16px;
+  width: 100vw;
+}
+.carusel div li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  list-style: none;
+}
+.carusel div li span {
+  color: #D6D0FB;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #1C1C21;
+  padding: 8px;
+  border-radius: 100px;
+}
+.icons div {
+  border: 1px solid red;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1C1C21;
+  background-color: #2F2F37;
+  background: linear-gradient(to bottom, #2F2F37 28%, #2F2F37 0%);
+  border-radius: 100px;
+}
+
 .hero__firstSection {
   display: flex;
   align-items: center;
@@ -189,6 +231,200 @@ body {
   font-size: 48px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.hero__secondSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero__images {
+  padding: 0 80px;
+  position: relative;
+}
+
+.hero__images div[firts-images] {
+  width: max-content;
+  display: flex;
+  gap: 12.42px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.hero__images div[firts-images] img[alt=first] {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.hero__images div[firts-images] img[alt=second] {
+  position: relative;
+  left: 0;
+}
+
+.hero__images div[firts-images] ~ img {
+  position: absolute;
+  bottom: 0;
+  left: 228.37px;
+}
+
+.hero__images div[wrapper] {
+  display: flex;
+  align-items: center;
+  gap: 16.04px;
+}
+
+.hero__images div[img] {
+  display: flex;
+  gap: 11.59px;
+  flex-direction: column;
+}
+
+.hero__images div[second-images] {
+  display: flex;
+  gap: 10.43px;
+}
+
+.about {
+  padding: 150px 80px 0;
+}
+
+.about__contant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1C1C21;
+}
+
+.about__user {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__user span {
+  color: #797C86;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.about__user p {
+  font-size: 48px;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about div[userAbout] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.about div[aboutInfo] {
+  border: 1px solid #1C1C21;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.about div[aboutInfo] div[aboutFirstInfo] {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px;
+  border-bottom: 1px solid #1C1C21;
+}
+
+.about div[aboutInfo] div[aboutFirstInfo] p[firstp] {
+  display: flex;
+  width: max-content;
+  margin: 0;
+  margin-bottom: 16px;
+  gap: 6px;
+}
+
+.about div[aboutInfo] div[aboutFirstInfo] p[firstp] span {
+  color: #CACACE;
+  font-size: 24px;
+}
+
+.about div[aboutInfo] div[aboutFirstInfo] p[firstp] ~ p {
+  color: #AFB0B6;
+  width: 570px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.about div[aboutSecondInfo] {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px;
+}
+
+.about div[aboutSecondInfo] p[firstp] {
+  width: max-content;
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+  gap: 6px;
+}
+
+.about div[aboutSecondInfo] p[firstp] span {
+  color: #CACACE;
+  font-size: 24px;
+}
+
+.about div[aboutSecondInfo] div[form] {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.about div[aboutSecondInfo] div[form] [email] {
+  padding-right: 67px;
+}
+
+.about div[aboutSecondInfo] div[form] [email] span {
+  color: #E4E4E6;
+}
+
+.about div[aboutSecondInfo] div[form] [email] p {
+  margin: 0;
+  margin-top: 6px;
+  color: #AFB0B6;
+  font-size: 18px;
+}
+
+.about div[aboutSecondInfo] div[form] [number] span {
+  color: #E4E4E6;
+}
+
+.about div[aboutSecondInfo] div[form] [number] p {
+  margin: 0;
+  margin-top: 6px;
+  color: #AFB0B6;
+  font-size: 18px;
+}
+
+.about div[iconsBtn] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about [btns] {
+  display: flex;
+  gap: 16px;
+}
+
+.about [btns] .btn a {
+  padding: 14px 53.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

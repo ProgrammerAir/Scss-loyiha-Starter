@@ -2,14 +2,11 @@
 @use "../abstract/variables";
 
 .hero {
-
-    // border: 1px solid red;
     &__firstSection {
         @include mixins.flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 80px;
-        // border: 1px solid red;
     }
 
     &__userName {
@@ -77,5 +74,52 @@
         font-size: 48px;
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    &__secondSection {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__images {
+        padding: 0 80px;
+        position: relative;
+
+        div[firts-images] {
+            width: max-content;
+            display: flex;
+            gap: 12.42px;
+            align-items: start;
+            flex-direction: column;
+
+            img[alt="first"] {
+                position: relative;
+                left: 0; top: 0;
+            }
+    
+            img[alt="second"] {
+                position: relative;
+                left: 0;
+            }
+        }
+        div[firts-images] ~ img {
+            position: absolute;
+            bottom: 0; left: 228.37px;
+        }
+        div[wrapper] {
+            display: flex;
+            align-items: center;
+            gap: 16.04px;
+        }
+        div[img] {
+            display: flex;
+            gap: 11.59px;
+            flex-direction: column;
+        }
+        div[second-images] {
+            display: flex;
+            gap: 10.43px;
+        }
     }
 }

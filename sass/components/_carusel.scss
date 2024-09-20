@@ -1,0 +1,25 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.carusel {
+    padding: 16px 0;
+    border-top: 2px solid #1C1C21;
+    border-bottom: 1px solid #1C1C21;
+    overflow: hidden;
+    div {
+        display: flex;
+        gap: 16px;
+        width: 100vw;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            width: max-content;
+            list-style: none;
+            span {
+                color: #D6D0FB;
+            }
+        }
+    }
+}
