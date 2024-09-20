@@ -16,7 +16,6 @@
             right: 0;
         }
 
-        ;
         border-left: 1px solid #1C1C21;
     }
 
@@ -64,7 +63,7 @@
             }
 
             li {
-                a.active{
+                a.active {
                     background-color: #131316;
                     color: #FFFFFF;
                 }
@@ -76,8 +75,11 @@
         display: block;
         width: max-content;
         border-right: 1px solid #1C1C21;
+
         padding: 22px 18px {
             left: 0;
-        };
+        }
+
+        ;
     }
 }
